@@ -1,0 +1,107 @@
+/*Cursor mouse piscando*/
+
+@keyframes animacao-cursor{
+    from{
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+.animation1{
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    animation: animacao-cursor 1500ms infinite normal;
+}
+
+
+/*Bart sentado se movendo e bart peladao se movendo quando a tela ta pequena*/
+
+@keyframes animacao{
+    0%{
+        transform: translate(-120vh);
+    }
+    50%{
+        transform: translate(101vh);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+.imagem1{
+    transform: translateY(0px);
+    animation: animacao 2s ease-in-out;
+}
+
+/*Linkedin*/
+
+.linkedin{
+    position: relative;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.linkedin:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+.linkedin:hover{
+    transform: scale(1.25, 1.25);
+}
+
+.linkedin:hover::after{
+    opacity: 1;
+}
+
+@keyframes homer{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(5px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+
+}
+
+#sobre > picture{
+    transform: translateY(0px);
+    animation: homer 2s infinite;
+}
+
+/*Em breve*/
+
+
+
+.em-breve{
+    position: relative;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.em-breve:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+.em-breve:hover{
+    transform: scale(1.25, 1.25);
+}
+
+.em-breve:hover::after{
+    opacity: 1;
+}
