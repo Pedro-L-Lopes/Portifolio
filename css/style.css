@@ -1,162 +1,184 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+}
+
+:root{
+    --cor0:#58BAFF;
+    --cor1:#4d56ff;
+    --cor2:#467ae8;
+    --cor3:#48cfe8;
+    --cor4:#4dffea;
+    --cor5:;
+
+    --fonte-padrao: 'Bebas Neue', cursive;
+    --fonte-destaque: 'Anton', sans-serif;
+    
+
 }
 
 body{
-    background: linear-gradient(to right, #3c75c0, #5498f0 );
-    overflow-x: hidden;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+
+
 
 a{
+    color: white;
     text-decoration: none;
-    color: white;
+    font-weight: bolder;
+    
 }
 
-li{
+header a:hover{
+    border: 2px solid white;
+ }
 
+main{
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px;
+    min-width: 350px;
+   
 }
 
-.apresentacao{
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    margin: 25vh;
-    color: white;
+section#inicio{
+    display: inline-block;
+    margin: auto;
+    font-size: 1.9em;
+    margin: 10% 0% 25% 17%;
+   
 }
-
-.frase-apresentacao{
-    font-size: 1.5em;
-}
-
-.nome-principal{
-    font-size: 4em;
+#inicio > p{
+    color: rgba(255, 255, 255, 0.792);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
 }
 
-.imagem1{
-
+.inicio{
+    color: white;
+    font-weight: bolder;
+    font-family: var(--fonte-padrao);
+    font-size: 3em;
 }
 
-.primeira-foto{
-    display: flex;
-    text-align: right;
-    justify-content: center;
-    align-items: center;
+div.foto1{
+    display: inline-block;
+    background-image: url(../imagens/bartsentado.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    margin-left: 25px;
+    width: 270px;
+    height: 270px;
+    margin-top: 10vh;
 }
 
-.primeirafoto1{
-    display: flex;
-    text-align: right;
-    justify-content: center;
-    align-items: center;
-}
-
-.primeirafoto2{
-
+div.foto1:hover{
+    border: 1px solid var(--cor0);
+    border-radius: 10px;
 }
 
 .linkedin{
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    color: #3c75c0;
-    background: white;
-    border-radius: 5px;
-    margin: 45px;
-    padding: 10px;
-    border-width: 15vh;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    min-width: 320px;
+    max-width: 800px;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.111);
+}
+
+.linkedin:hover{
+    transition-duration: 0.5s;
 }
 
 #sobre{
-    background: white;
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    padding: 20vh;
-}
-
-.fotos{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 250px;
-}
-
-#projetos{
-    text-align: center;
-}
-
-.texto-sobre > h1{
-    font-size: 5em;
-    margin: 4vh 0 0 1vh;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.projetinho{
-    background-color: yellow;
-    display: inline-block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 50vh;
-    height: 35vh;
-    margin: 10px;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 50px;
-    background-image: url(../imagens/homerbabando.png);
-}
-
-.projetinho > h2{
-   color: rgb(218, 0, 0);
-   background-color: #ffffff7b;
+   background: rgba(0, 0, 0, 0.163);
+   padding: 20px;
    border-radius: 5px;
-}
-
-.projetinho > picture{
-   
-}
-
-.em-breve{
-    display: flex;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    margin: 10px;
-    width: 40vh;
-    height: 25vh;
-    border-radius: 15px;
-}
-
-.projetinho:picture::img{
+   margin: auto;
+   max-width: 800px;
+   min-width: 350px;
     
 }
 
-#tecnologias{
-    background: white;
-    list-style: none;
-    width: 100%;
-    height: 100%;
-
-
+#sobre > h2{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    padding: 20px;
+    font-size: 3em;
 }
 
-#tecnologias li{
+#sobre > p{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+.foto-sobre{
+    margin-left: 75vh;
+}
+
+#projetos{
+    position: relative;
+    border: 1px solid black;
+    margin-top: 25vh;
+    height: 96vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div.projetos{
     display: inline-block;
-
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.228);
 }
 
+div.projetos:hover{
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.449);
+}
 
+#projetos > h1{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    color: white;
+    font-size: 5em;
+    
+}
 
+div#projeto1{
+    background: rgba(0, 0, 0, 0.207);
+    background-image: url(../imagens/bugdroid.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
+.pnone{
+    position: absolute;
+    display: none;
+}
+
+div#projeto1:hover + .pnone{
+    display: inline;
+}

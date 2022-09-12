@@ -19,44 +19,44 @@
 
 @keyframes animacao{
     0%{
-        transform: translate(-120vh);
+        transform: translate(0vh);
     }
     50%{
-        transform: translate(101vh);
+        transform: translate(2vh);
     }
     100%{
-        transform: translate(0px);
+        transform: translate(0vh);
     }
 }
 
-.imagem1{
+.foto1{
     transform: translateY(0px);
-    animation: animacao 2s ease-in-out;
+    animation: animacao 2s infinite;
 }
 
 /*Linkedin*/
 
-.linkedin{
+.linkedin, .foto-sobre{
     position: relative;
     transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.linkedin:after{
+.linkedin:after, .foto-sobre:after{
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
     z-index: -1;
 }
 
-.linkedin:hover{
-    transform: scale(1.25, 1.25);
+.linkedin:hover, .foto-sobre:hover{
+    transform: scale(1.1, 1.1);
 }
 
-.linkedin:hover::after{
+.linkedin:hover::after, .foto-sobre:hover::after{
     opacity: 1;
 }
 
@@ -78,30 +78,5 @@
     animation: homer 2s infinite;
 }
 
-/*Em breve*/
 
 
-
-.em-breve{
-    position: relative;
-    transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.em-breve:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
-    z-index: -1;
-}
-
-.em-breve:hover{
-    transform: scale(1.25, 1.25);
-}
-
-.em-breve:hover::after{
-    opacity: 1;
-}
