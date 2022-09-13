@@ -15,12 +15,9 @@
     --cor2:#467ae8;
     --cor3:#48cfe8;
     --cor4:#4dffea;
-    --cor5:;
 
     --fonte-padrao: 'Bebas Neue', cursive;
     --fonte-destaque: 'Anton', sans-serif;
-    
-
 }
 
 body{
@@ -30,9 +27,6 @@ body{
     background-attachment: fixed;
 }
 
-
-
-
 a{
     color: white;
     text-decoration: none;
@@ -41,7 +35,7 @@ a{
 }
 
 header a:hover{
-    border: 2px solid white;
+    
  }
 
 main{
@@ -49,14 +43,13 @@ main{
     padding: 20px;
     max-width: 1200px;
     min-width: 350px;
-   
 }
 
 section#inicio{
     display: inline-block;
     margin: auto;
     font-size: 1.9em;
-    margin: 10% 0% 25% 17%;
+    margin: 10% 0% 0% 17%;
    
 }
 #inicio > p{
@@ -101,19 +94,80 @@ div.foto1:hover{
     height: 8vh;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.111);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.214);
 }
 
 .linkedin:hover{
     transition-duration: 0.5s;
 }
 
+#contatos{
+    border: 1px solid red;
+    text-align: left;
+    margin: auto;
+    max-width: 370px;
+    margin-left: 30vh;
+    margin-bottom: 25vh;
+}
+
+.contatos{
+    background: rgba(255, 255, 255, 0);
+    display: inline-block;
+    border-radius: 3px;
+    width: 70px;
+    height: 70px;
+}
+
+#cont1{
+    background-image: url(../imagens/wpp.png);
+    background-repeat: no-repeat;
+    background-size: 230px;
+    background-position: left center;
+    background-attachment: local;
+}
+
+#cont2{
+    background-image: url(../imagens/fb.png);
+    background-repeat: no-repeat;
+    background-size: 235px;
+    background-position: top center;
+    background-attachment: local;
+}
+
+#cont3{
+    background-image: url(../imagens/insta.png);
+    background-repeat: no-repeat;
+    background-size: 230px;
+    background-position: left top;
+    background-attachment: local;
+}
+
+#cont4{
+    background-image: url(../imagens/tt.png);
+    background-repeat: no-repeat;
+    background-size: 230px;
+    background-position: right top;
+    background-attachment: local;
+}
+
+#cont5{
+    background-image: url(../imagens/yt.png);
+    background-repeat: no-repeat;
+    background-size: 230px;
+    background-position: center;
+    background-attachment: local;
+}
+
+
 #sobre{
    background: rgba(0, 0, 0, 0.163);
    padding: 20px;
-   border-radius: 5px;
+   border-radius: 3px;
    margin: auto;
    max-width: 800px;
    min-width: 350px;
+   box-shadow: 1px 2px rgba(0, 0, 0, 0.357);
+   margin-bottom: 5vh;
     
 }
 
@@ -137,48 +191,135 @@ div.foto1:hover{
 }
 
 #projetos{
-    position: relative;
-    border: 1px solid black;
-    margin-top: 25vh;
-    height: 96vh;
-    justify-content: center;
-    align-items: center;
-}
-
-div.projetos{
-    display: inline-block;
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 0px 1px rgba(0, 0, 0, 0.228);
-}
-
-div.projetos:hover{
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.449);
-}
-
-#projetos > h1{
     text-align: center;
-    font-family: var(--fonte-destaque);
-    color: white;
-    font-size: 5em;
-    
+    margin: auto;   
 }
 
-div#projeto1{
-    background: rgba(0, 0, 0, 0.207);
-    background-image: url(../imagens/bugdroid.png);
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-position: center center;
+#projetos > h2{
+   font-size: 5vw;
+   color: white;
+   margin-bottom: 5vh;
+}
+
+.projetos{
+    background: rgba(255, 255, 255, 0.163);
+    display: inline-block;
+    border-radius: 3px;
+    width: 200px;
+    height: 150px;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.271);
+}
+
+.projetos:hover{
+    box-shadow: 0px 3px rgba(0, 0, 0, 0.457);
 }
 
 .pnone{
     position: absolute;
     display: none;
+    text-align: center;
+    margin-left: -204px;
+    margin-top: -45px;
+    border: 1px solid rgba(255, 255, 255, 0.163);
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.138);
+    padding: 10px;
+    border-radius: 3px;
 }
 
-div#projeto1:hover + .pnone{
+#projeto1{
+    background-image: url(../imagens/dan-droids-pq.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 135px;
+}
+
+#projeto2, #projeto3,#projeto4,#projeto5,#projeto6,#projeto7,#projeto8{
+    background-image: url(../imagens/em-breve.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: left center;
+}
+
+#projeto1:hover + .pnone, #projeto2:hover +.pnone, #projeto3:hover +.pnone{
     display: inline;
 }
+
+#tecnologias{
+    text-align: center;
+    margin: auto;
+    margin-top: 45px;
+}
+
+#tecnologias > h1{
+    margin: 5vh;
+    font-size: 3vw;
+    color: white;
+}
+
+.tecnologias{
+    display: inline-block;
+    border-radius: 3px;
+    width: 100px;
+    height: 80px; 
+}
+
+.tecnologias:hover{
+    box-shadow: 0px 3px rgba(0, 0, 0, 0.457);
+}
+
+#tec1{
+    background-image: url(../imagens/python.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70px;
+}
+
+#tec2{
+    background-image: url(../imagens/Clogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:  70px;
+}
+
+#tec3{
+    background-image: url(../imagens/htmllogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:  70px;
+}
+
+#tec4{
+    background-image: url(../imagens/css3logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:  70px;
+}
+
+#tec5{
+    background-image: url(../imagens/jslogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:  70px;
+}
+
+#tec6{
+    background-image: url(../imagens/git.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:  70px;
+}
+
+#tec7{
+    background-image: url(../imagens/github.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:  70px;
+}
+
+#tec1:hover + .pnone, #tec2:hover +.pnone, #tec3:hover +.pnone, #tec4:hover +.pnone, #tec5:hover +.pnone, #tec6:hover +.pnone, #tec7:hover +.pnone{
+    display: inline;
+}
+
+
+
+
