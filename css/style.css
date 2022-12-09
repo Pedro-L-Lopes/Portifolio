@@ -222,28 +222,28 @@ div.foto1:hover{
 }
 
 #projeto1{
-    background-image: url(../imagens/dfdroid.PNG);
+    background-image: url(../imagens/game.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 270px;
 }
 
 #projeto2{
-    background-image: url(../imagens/projeto-cordel.PNG);
+    background-image: url(../imagens/calc.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 200px;
 }
 
 #projeto3{
-    background-image: url(../imagens/hora.PNG);
+    background-image: url(../imagens/imc.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 200px;
 }
 
 #projeto4{
-    background-image: url(../imagens/calculadora.PNG);
+    background-image: url(../imagens/desp.png);
     background-repeat: no-repeat;
     background-size: 350px;
     background-position: center center;
@@ -325,7 +325,21 @@ div.foto1:hover{
     background-size:  70px;
 }
 
-#tec1:hover + .pnone, #tec2:hover +.pnone, #tec3:hover +.pnone, #tec4:hover +.pnone, #tec5:hover +.pnone, #tec6:hover +.pnone, #tec7:hover +.pnone{
+#tec8{
+    background-image: url(../imagens/php.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:  70px;
+}
+
+#tec9{
+    background-image: url(../imagens/react.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:  70px;
+}
+
+#tec1:hover + .pnone, #tec2:hover +.pnone, #tec3:hover +.pnone, #tec4:hover +.pnone, #tec5:hover +.pnone, #tec6:hover +.pnone, #tec7:hover +.pnone, #tec8:hover +.pnone, #tec9:hover +.pnone{
     display: inline;
 }
 
